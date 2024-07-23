@@ -213,13 +213,16 @@
 
 /* ////////////////section/////////////// */
 
-#section{}
+#section{
+    width: 1164px;
+    margin: 0 auto;
+}
 
 .main_visual{
     margin: 10px auto;
     width: 1164px;
     height: 570px;
-    border:  1px solid tomato;
+    /* border:  1px solid tomato; */
     position: relative;
 }
 
@@ -275,13 +278,172 @@
 }
 
 
+.main1{
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.photo_wrap{
+    width: 574px;
+    height: 346px;
+    background-color: #3f3f3f;
+}
+        /* 슬릭 */
+        .photo{}
+        .photo .slick-slide{
+            position: relative;
+        }
+        .photo .slick-dots{
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+        }
+        .photo .slick-dots li{
+            display: inline-block;
+            margin-left: 5px;
+        }
+        .photo .slick-dots li button{
+            width: 15px;
+            height: 15px;
+            text-indent: -9999px;
+            border: none;
+            background-color: #cfcfcf;
+        }
+        .photo .slick-dots li.slick-active button{
+            background-color: #e0000a;
+        }
+
+
+.p_title{
+    width: 574px;
+    position: absolute;
+    bottom: 0; left: 0;
+    height: 140px;
+    background-color: #ffffff6c;
+}
+.p_title h3{
+    margin: 30px 0 10px 20px;
+}
+.p_title img{
+    float: left;
+    margin: 0 10px 0 20px;
+}
+.p_title h2{
+    float: left;
+    font-size: 24px;
+    margin: 10px;
+}
+.line{
+    width: 17px;
+    height: 2px;
+    background-color: #e0000a;
+    margin: 0 0 15px 20px;
+}
+
+
+.banner_wrap{
+    width: 280px;
+    /* height: 209px; */
+    background-color: #eee;
+    position: relative;
+
+}
+
+
+.b_title{}
+.b_title h3{
+    margin: 15px 0 15px 20px;
+}
+.b_title p{
+    margin: 10px 10px 0 20px;
+    word-spacing: -2px;
+}
+
+.banner{
+    height: 346px;
+}
+.banner .slick-slide{
+}
+.banner .slick-dots{
+    position: absolute;
+    right: 30px; bottom: 5px;
+}
+.banner .slick-dots li{
+    display: inline-block;
+    margin-left: 10px;
+}
+.banner .slick-dots li button{
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    text-indent: -9999px;
+    border: none;
+    background-color: #cfcfcf;
+    cursor: pointer;
+}
+.banner .slick-dots li.slick-active button{
+    background-color: #e0000a;
+
+}
 
 
 
 
+.viewer_wrap{
+    width: 280px;
+    /* height: 209px; */
+    background-color: #eee;
+    position: relative;
+}
+
+.b_title{}
+.b_title h3{
+    margin: 15px 0 15px 20px;
+}
+.b_title p{
+    margin: 10px 10px 0 20px;
+    word-spacing: -2px;
+}
+
+.viewer{
+    height: 346px;
+}
+.viewer .slick-slide{
+}
+.viewer .slick-dots{
+    position: absolute;
+    right: 30px; bottom: 5px;
+}
+.viewer .slick-dots li{
+    display: inline-block;
+    margin-left: 10px;
+}
+.viewer .slick-dots li button{
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    text-indent: -9999px;
+    border: none;
+    background-color: #cfcfcf;
+    cursor: pointer;
+}
+.viewer .slick-dots li.slick-active button{
+    background-color: #e0000a;
+
+}
 
 
+.b_play{
+    width: 10px; height: 10px;
+    border: none;
+    background: transparent url(../images/btn_rolling_s_play.png) no-repeat;
+    text-indent: -9999px;
+    position: absolute;
+    right: 10px; bottom: 10px;
+    cursor: pointer;
+}
 
 
-
-
+.b_play.on{
+    background: transparent url(../images/btn_rolling_s_stop.png) no-repeat;
+}

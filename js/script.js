@@ -35,4 +35,58 @@ $(function(){
         }
     })
 
+    //main1 photo slick
+$(".photo").slick({
+    autoplay : true,
+    autoplaySpeed : 4000,
+    dots : true,
+    arrows : false
+})
+
+//main banner slick
+
+$(".banner").slick({
+    // autoplay : true,
+    // autoplaySpeed : 4000,
+    dots : true,
+    arrows : false
+})
+
+
+$(".banner_wrap .b_play").click(function(){
+
+    if($(this).hasClass("on") == true){
+        $(this).removeClass("on");
+        $(".banner").slick("slickPause")
+    }else{
+        $(this).addClass("on");
+        $(".banner").slick("slickPlay")
+    }
+
+})//click
+
+
+$(".viewer").slick({
+    // autoplay : true,
+    // autoplaySpeed : 4000,
+    dots : true,
+    arrows : false
+})
+
+
+$(".viewer_wrap .b_play").click(function(){
+
+    if($(this).hasClass("on") == true){
+        $(this).removeClass("on");
+        $(".viewer").slick("slickPause")
+    }else{
+        $(this).addClass("on");
+        $(".viewer").slick("slickPlay")
+    }
+
+})//click
+
+
+
+
 }) //j
